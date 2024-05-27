@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title> <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Thank you for choosing.<br> your feedback will help us improve our work and our service standards,so we would greatly appreciate you filling out this form.<br>Thank you!</p>
+  <form id="survey-form">
+    <section>
+        <div class="input-element">
+            <label id="name-label">
+                Name
+            </label>
+            <input placeholder="name" id="name" type="text" required/>
+        </div>
+        <div class="input-element">
+          <label id="email-label">
+            Email
+          </label>
+          <input placeholder="email" id="email" type="email" required/>
+        </div>
+        <div class="input-element">
+            <label id="number-label">
+                Age
+            </label>
+            <input placeholder="age" id="number" min="5" max="100"type="number" required/>
+        </div>
+    </section>
+
+    <section>
+        <div class="input-element">
+          <label id="select-label">
+            What is your Job?
+          </label>
+          <select id="dropdown" >
+            <option>Teacher</option>
+            <option>Doctor</option>
+            <option>Manager</option>
+          </select>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <label>Gender</label>
+          <label><input type="radio" name="gender" value="male"/>Male</label>
+        </div>
+        <div>
+           <label><input type="radio" name="gender" value="female" >Female</label>
+        </div>
+    </section>
+
+    <section>
+        <div>
+          <label>Which program do you want to study?</label>
+          <label><input type="checkbox" name="program" value="web development"/> Web develpment</label>
+        </div>
+        <div>
+            <label><input type="checkbox" name="program" value="Graphic design" />Graphic design</label>
+        </div>
+        <div>
+            <label><input type="checkbox" name="program" value="Office package" />Office package</label>
+        </div>
+        <div>
+            <label><input type="checkbox" name="program" value="Adobe photoshop" />Adobe photoshop</label>
+        </div>
+    </section>
+
+    <section>
+        <h2 id="text">Any Comments</h2>
+        <label></label>
+        <div>
+            <textarea type="text"></textarea>
+        </div>
+    </section>
+    <section>
+        <button type="submit" id="submit">Submit</button>
+    </section>
+</body>
+</html>
